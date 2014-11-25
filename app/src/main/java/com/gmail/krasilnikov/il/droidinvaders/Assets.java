@@ -70,7 +70,7 @@ public class Assets {
             for (int x = 0; x < 256; x+=64) {
                 keyFrames[frame++] = new TextureRegion(explosionTexture, x, y, 64, 64);
             }
-        };
+        }
         explosionAnim = new Animation(0.1f, keyFrames);
         shipTexture = new Texture(game, "droidInvaders/di_ship.png", true);
         shipModel = ObjLoader.load(game, "droidInvaders/di_ship.obj");
@@ -102,5 +102,7 @@ public class Assets {
         if (Settings.soundEnabled)
             sound.play(1);
     }
+
+    // simple comment into source
 
 }
